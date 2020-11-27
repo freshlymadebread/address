@@ -37,7 +37,7 @@ export default class mapPoint extends React.Component{
             <Map center={{lng: 116.402544, lat: 39.928216}} zoom="11" onClick={ e => this.handClick(e) } enableScrollWheelZoom>
                 <Marker position={{lng: 116.402544, lat: 39.928216}} />
                 <NavigationControl /> 
-                {this.state.showInfoFlag && <InfoWindow position={{lng: this.state.lng, lat: this.state.lat,}} text="你吗炸了" title="标题"/>}
+                {this.state.showInfoFlag && <InfoWindow position={{lng: this.state.lng, lat: this.state.lat,}} text="这是弹窗" title="标题"/>}
             </Map>
         </div>
         );
