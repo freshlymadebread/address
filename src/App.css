@@ -1,5 +1,8 @@
+@import '~antd/dist/antd.css';
+
 .App {
   text-align: center;
+  padding: 10px;
 }
 
 .App-logo {
@@ -26,6 +29,11 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.main{
+  padding: 1vw;
+  margin: 1vw;
 }
 
 @keyframes App-logo-spin {
