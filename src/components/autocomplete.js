@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react';
 import 'antd/dist/antd.css';
 import { AutoComplete } from 'antd';
 
@@ -13,11 +12,17 @@ class Complete extends React.Component {
         this.state={
             result: []
         }
+        this.changeValue = this.changeValue.bind(this)
     }
     setResult(res){
         this.setState({
             result: res
         })
+    }
+    changeValue(e){
+      console.log("改变")
+      console.log(e)
+      this.props.onChange(e)
     }
     render(){
         let timer = undefined
@@ -43,10 +48,10 @@ class Complete extends React.Component {
               width: 200,
             }}
             value={this.props.value}
-            onChange={this.props.onChange}
+            onChange={this.changeValue}
             onSearch={handleSearch}
             onFocus={handleSearch}
-            placeholder="input here"
+            placeholder="输入搜索信息"
           >
             {this.state.result.map((item, index) => (
               <Option key={item.index} value={item.value}>

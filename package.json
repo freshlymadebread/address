@@ -7,6 +7,7 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "antd": "^4.8.4",
+    "axios": "^0.21.0",
     "react": "^17.0.1",
     "react-bmap": "^1.0.121",
     "react-bmapgl": "^0.1.1",
@@ -38,5 +39,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "proxy": "http://api.map.baidu.com"
 }

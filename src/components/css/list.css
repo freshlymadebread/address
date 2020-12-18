@@ -1,0 +1,10 @@
+.order-detail::before{
+    content: ".";
+    position: absolute;
+    left: -9px;
+    color: #827f7f;
+    background: #827f7f;
+}
+.order-detail{
+    cursor: pointer;
+}
