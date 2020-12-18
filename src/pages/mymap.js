@@ -119,7 +119,7 @@ export default class myMap extends React.Component{
                         </div>
                     </InfoWindow>}
                 </Map>
-                <Drawer title="订单详情" placement="bottom" closable={true} onClose={this.onClose} visible={this.state.visible} key="bottom">
+                <Drawer height={400}	 title="订单详情" placement="bottom" closable={true} onClose={this.onClose} visible={this.state.visible} key="bottom">
                     <MyList onclick={this.showOrder}></MyList>
                 </Drawer>
             </div>

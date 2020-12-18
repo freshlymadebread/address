@@ -41,17 +41,17 @@ class BasicExample extends React.Component {
               <Link to="/">主页</Link>
             </Menu.Item>
             <Menu.Item key="mapPoint" icon={<SendOutlined />}>
-              <Link to="/mapPoint">撒点</Link>
+              <Link to="/mapPoint">位置搜索</Link>
             </Menu.Item>
             <Menu.Item key="map" icon={<SearchOutlined />}>
-              <Link to="/map">查询路线</Link>
+              <Link to="/map">订单展示和路线查询</Link>
             </Menu.Item>
-            <Menu.Item key="nothing" icon={<WarningOutlined />}>
+            {/* <Menu.Item key="nothing" icon={<WarningOutlined />}>
               <Link to="/nothing">404</Link>
             </Menu.Item>
             <Menu.Item key="topics" icon={<SendOutlined />}>
               <Link to="/topics">嵌套路由</Link>
-            </Menu.Item>
+            </Menu.Item> */}
           </Menu>
     
           <hr/>
