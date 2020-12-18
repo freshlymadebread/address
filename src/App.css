@@ -35,7 +35,9 @@
   padding: 1vw;
   margin: 1vw;
 }
-
+.infop{
+  text-indent: 2em;
+}
 .search-bar{
   padding: 1vw 1vh
 }
